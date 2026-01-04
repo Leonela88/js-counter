@@ -1,4 +1,22 @@
 import {add, reset, decrease} from './counter.js'
 
+const addBtn = document.getElementById("add");
 
-//Aquí estarán los eventos que ejecutarán cada una de las funciones realizadas
+addBtn.addEventListener("click", function() {
+  
+    add(); 
+});
+
+
+const resetBtn = document.getElementById("reset");
+
+resetBtn.addEventListener("click", function(){
+    reset();
+});
+
+const decreaseBtn = document.getElementById("decrease");
+
+decreaseBtn.addEventListener("click", function(){
+    decrease()
+});
+

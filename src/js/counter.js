@@ -1,13 +1,26 @@
-function add(){
-    //Escribir tu código que aumenta
+
+let init = 0;
+
+function add() {
+    init++;
+
+    document.getElementById("number").innerHTML = init;
 }
 
-function reset(){
-    //Escribir tu código que hace un reset a 0
+function reset() {
+    
+    init = 0;
+    document.getElementById("number").innerHTML = init;
 }
 
-function decrease(){
-    //Escribir tu código que resta
+function decrease() {
+    
+    if (init > 0) {
+        init--;
+    }
+   
+    document.getElementById("number").innerHTML = init;
+
 };
 
-export {add, reset, decrease}
+export { add, reset, decrease }
